@@ -1,5 +1,9 @@
 # Playwright with Browser Extension Example
 
+<div align="center">
+    <img src="blob/pw-with-selectorshub-extension.svg" alt="Playwright with SelectorHub Extension" width="600"/>
+</div>
+
 This project demonstrates how to run Playwright tests with a custom browser extension loaded into Microsoft Edge. It utilizes custom fixtures to set up a persistent browser context with the extension enabled.
 
 ## Project Structure
