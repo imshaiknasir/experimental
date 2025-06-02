@@ -1,0 +1,12 @@
+# Ignore 'node_modules/' wherever it appears in the repository.
+# This pattern matches 'node_modules/' at any depth, which is standard practice.
+node_modules/
+
+# Ignore specific directories and files that are direct children of any immediate subdirectory
+# within your root repository.
+# The `*/` matches any directory one level below the root.
+*/test-results/
+*/playwright-report/
+*/blob-report/
+*/playwright/.cache/
+*/user-data/
