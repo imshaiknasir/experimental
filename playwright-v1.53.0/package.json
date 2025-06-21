@@ -2,13 +2,28 @@
   "name": "playwright-v1.53.0",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "package:install": "npm install",
+    "package:reinstall": "rm -rf node_modules && rm -f package-lock.json && npm run package:install",
+    "postinstall": "npm run pw:install",
+    "pw:install": "npx playwright install --with-deps",
+    "pw:list": "npx playwright install --list",
+    "pw:install:chromium": "npx playwright install chromium",
+    "pw:install:firefox": "npx playwright install firefox",
+    "pw:install:webkit": "npx playwright install webkit",
+    "pw:clearCache": "npx playwright install --clear-cache",
+    "pw:test": "npx playwright test",
+    "pw:test:watch": "npx playwright test --watch",
+    "pw:test:ui": "npx playwright test --ui",
+    "pw:test:debug": "npx playwright test --debug",
+    "pw:test:headed": "npx playwright test --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.53.0",
-    "@types/node": "^24.0.0"
+    "@playwright/test": "^1.53.1",
+    "@types/node": "^24.0.3"
   }
 }
