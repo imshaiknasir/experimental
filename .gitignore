@@ -10,3 +10,7 @@ node_modules/
 */blob-report/
 */playwright/.cache/
 */user-data/
+*/.venv/
+.env
+logs/
+**.gif
